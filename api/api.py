@@ -17,15 +17,15 @@ from src.arguments import ARGUMENTS
 from src.decorators import timer_error_log, require_authentication
 from src.user import GLOBAL_USER
 
-BASE_URL = "13.48.189.101"
-# python3 -m ptvsd --host 83.11.113.70 --port 12345 --wait -m myproject
+BASE_URL = "XXX"
+# python3 -m ptvsd --host 123.123.1.2 --port 12345 --wait -m projectName
 
 db.connect(
     host=BASE_URL,
-    # port="5432",
-    database="angulardb",
-    user="angular",
-    password="qwe",
+    # port="XXX",
+    database="XXX",
+    user="XXX",
+    password="XX",
 )
 
 (module_name, action_name) = ARGUMENTS.get_path_args_list(2)
